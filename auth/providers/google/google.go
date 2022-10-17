@@ -34,8 +34,8 @@ const (
 
 	googleIssuerUrl = "https://accounts.google.com"
 	// https://developers.google.com/identity/protocols/OAuth2InstalledApp
-	GoogleOauth2ClientID     = "37154062056-220683ek37naab43v23vc5qg01k1j14g.apps.googleusercontent.com"
-	GoogleOauth2ClientSecret = "pB9ITCuMPLj-bkObrTqKbt57"
+	GoogleOauth2ClientID     = "484925643224-2gpu9rh2d288mffd8nrqgt8pofrtebkr.apps.googleusercontent.com"
+	GoogleOauth2ClientSecret = "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"
 )
 
 func init() {

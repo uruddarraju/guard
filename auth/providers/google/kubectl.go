@@ -56,8 +56,9 @@ func IssueToken() error {
 	// PromptSelectAccount allows a user who has multiple accounts at the authorization server
 	// to select amongst the multiple accounts that they may have current sessions for.
 	// eg: https://developers.google.com/identity/protocols/OpenIDConnect
-	promptSelectAccount := oauth2.SetAuthURLParam("prompt", "select_account")
-	codeURL := gauthConfig.AuthCodeURL("/", promptSelectAccount)
+	promptSelectAccount := oauth2.SetAuthURLParam("prompt", "consent")
+	accessTypeOpt := oauth2.SetAuthURLParam("access_type", "offline")
+	codeURL := gauthConfig.AuthCodeURL("/", promptSelectAccount, accessTypeOpt)
 
 	klog.Infoln("Auhtorization code URL:", codeURL)
 
